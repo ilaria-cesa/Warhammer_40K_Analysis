@@ -87,8 +87,8 @@ API_acquisition.py → parser.py → reparser.py → merger.py → cleaner.py �
 
 ## Authors
 
-- **Chiara Mezzanzanica**: data acquisition and parsing pipeline
-- **Ilaria Cesaratto**: data cleaning and standardisation, integration of the datasets, design and implementation of the relational SQLite database used for the analyses
-- **Andrea Porro**: statistical analysis and interpretation
+- **Chiara Mezzanzanica:** data acquisition and parsing pipeline
+- **Ilaria Cesaratto:** data cleaning, integration, design and implementation of SQLite database
+- **Andrea Porro:** statistical analysis and interpretation
 
-Warhammer 40,000 is a trademark of Games Workshop. This is an independent academic project, not affiliated with or endorsed by Games Workshop.
+*Warhammer 40,000 is a trademark of Games Workshop. This is an independent academic project, not affiliated with or endorsed by Games Workshop.*
