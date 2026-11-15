@@ -13,7 +13,6 @@ To remove a badge, delete its line. To add one, copy a line and change text and 
   <img alt="Data Management" src="https://img.shields.io/badge/Data%20Management-6C5CE7?style=for-the-badge">
   <img alt="REST API" src="https://img.shields.io/badge/REST%20API-E4572E?style=for-the-badge&logo=json&logoColor=white">
   <img alt="SQLite Database" src="https://img.shields.io/badge/SQLite%20Database-0E7C86?style=for-the-badge&logo=sqlite&logoColor=white">
-  <img alt="Data Cleaning" src="https://img.shields.io/badge/Data%20Cleaning-2E86AB?style=for-the-badge">
   <img alt="Data Quality" src="https://img.shields.io/badge/Data%20Quality-3BB273?style=for-the-badge">
   <img alt="Statistical Analysis" src="https://img.shields.io/badge/Statistical%20Analysis-C44569?style=for-the-badge">
 </p>
