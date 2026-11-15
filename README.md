@@ -1,10 +1,26 @@
-# Warhammer 40K Tournament Analysis
-### Does Army Cost Impact Competitive Performance?
+<!--
+BADGE COLORS: in each badge URL, change the 6-digit hex code just before "?style=".
+Example: .../badge/Data%20Management-6C5CE7?style=for-the-badge  ->  6C5CE7 is the color.
+To change the text, edit the words before the dash (use %20 for spaces).
+To remove a badge, delete its line. To add one, copy a line and change text and color.
+-->
 
-Data management and analysis project on the **Warhammer 40,000 World Championship 2025** (Atlanta, GA). Tournament results for 402 players are collected via REST API, integrated with retail miniature prices, stored in a relational SQLite database and analysed to find out whether money buys victory.
+<h1 align="center">Warhammer 40K Tournament Analysis</h1>
 
-Developed for the Data Management course, MSc in Data Science, **University of Milano-Bicocca**.
-Full methodology and results are available in the project report.
+<p align="center"><b>Does Army Cost Impact Competitive Performance?</b></p>
+
+<p align="center">
+  <img alt="Data Management" src="https://img.shields.io/badge/Data%20Management-6C5CE7?style=for-the-badge">
+  <img alt="REST API" src="https://img.shields.io/badge/REST%20API-E4572E?style=for-the-badge&logo=json&logoColor=white">
+  <img alt="SQLite Database" src="https://img.shields.io/badge/SQLite%20Database-0E7C86?style=for-the-badge&logo=sqlite&logoColor=white">
+  <img alt="Data Cleaning" src="https://img.shields.io/badge/Data%20Cleaning-2E86AB?style=for-the-badge">
+  <img alt="Data Quality" src="https://img.shields.io/badge/Data%20Quality-3BB273?style=for-the-badge">
+  <img alt="Statistical Analysis" src="https://img.shields.io/badge/Statistical%20Analysis-C44569?style=for-the-badge">
+</p>
+
+Data management and analysis project on the Warhammer 40,000 World Championship 2025 (Atlanta, GA). Tournament results for 402 players are collected via REST API, integrated with retail miniature prices, stored in a relational SQLite database and analysed to find out whether money buys victory.
+
+Developed for the Data Management course, MSc in Data Science, University of Milano-Bicocca. Full methodology and results are available in the project report.
 
 ## Research Questions
 
@@ -19,19 +35,18 @@ Full methodology and results are available in the project report.
 - Top 25 and bottom 25 players spent statistically the same amount (p = 0.3082): reaching the elite level does not require a bigger budget.
 - Faction popularity is unrelated to win rate (r = 0.0007), while detachment choice is a key strategic factor within a faction.
 - No global advantage for elite or horde lists; only 3 of 40 faction matchups are significant hard counters.
-
-**Warhammer 40,000 is not pay-to-win:** money gives a marginal advantage, but success is driven mainly by player skill, strategy and preparation.
+- Warhammer 40,000 is not pay-to-win: money gives a marginal advantage, but success is driven mainly by player skill, strategy and preparation.
 
 ## Data Sources
 
 | Dataset | Source | Availability |
 |---|---|---|
-| Tournament data | [ListEngine](https://listengine-v3-be.onrender.com) REST API (JSON) | Processed files included |
-| Pricing data | Official price list provided by **ArsManufactorea** (XLSX, November 2025) | Private, not included |
+| Tournament data | ListEngine REST API (JSON) | Processed files included |
+| Pricing data | Official price list provided by ArsManufactorea (XLSX, November 2025) | Private, not included |
 
 ## Repository Structure
 
-```
+```text
 .
 ├── README.md
 |
@@ -62,7 +77,7 @@ Full methodology and results are available in the project report.
 
 ## Pipeline
 
-`API_acquisition.py` → `parser.py` → `reparser.py` → `merger.py` → `cleaner.py` → `Warhammer_SQL.py` → `data_quality_assessment.ipynb` → `warhammer_analysis.ipynb`
+API_acquisition.py → parser.py → reparser.py → merger.py → cleaner.py → Warhammer_SQL.py → data_quality_assessment.ipynb → warhammer_analysis.ipynb
 
 ## Limitations
 
@@ -72,8 +87,8 @@ Full methodology and results are available in the project report.
 
 ## Authors
 
-- **Chiara Mezzanzanica:** data acquisition and parsing pipeline
-- **Ilaria Cesaratto:** Data cleaning, integration, design and implementation of the SQL database
-- **Andrea Porro:** statistical analysis and interpretation
+- **Chiara Mezzanzanica**: data acquisition and parsing pipeline
+- **Ilaria Cesaratto**: data cleaning and standardisation, integration of the datasets, design and implementation of the relational SQLite database used for the analyses
+- **Andrea Porro**: statistical analysis and interpretation
 
-<sub>Warhammer 40,000 is a trademark of Games Workshop. This is an independent academic project, not affiliated with or endorsed by Games Workshop.</sub>
+Warhammer 40,000 is a trademark of Games Workshop. This is an independent academic project, not affiliated with or endorsed by Games Workshop.
